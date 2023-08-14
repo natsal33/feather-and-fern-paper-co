@@ -1,0 +1,17 @@
+#about-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+#about-commentary {
+  width: 60%;
+}
+
+#artist-portrait {
+  width: 200px;
+  height: 200px;
+  background-image: url("../pics/wire_frame_box.png");
+  background-size: 200px;
+  background-repeat: no-repeat;
+}
