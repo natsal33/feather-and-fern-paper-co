@@ -1,0 +1,37 @@
+.Header {
+  width: 100%;
+  padding: 5px;
+  display: inline-grid;
+  grid-template-columns: repeat(12, 1fr);
+  border-bottom: 3px solid black;
+}
+
+.navBarSection {
+  grid-column: span 4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navBarItem {
+  border-radius: 5px;
+  padding: 7px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+#business-logo {
+  grid-column: span 4;
+  text-align: center;
+}
+/* To revisit when doing responsive design editing */
+/* @media only screen and (min-width: 920px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .Header {
+    display: flex;
+  }
+}
+*/

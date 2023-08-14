@@ -1,0 +1,40 @@
+#homeContent {
+  width: 100vh;
+  height: 100vh;
+  display: flexbox;
+  justify-content: center;
+}
+
+#scrollingGallery {
+  padding: 10px;
+  margin: 10px;
+  min-width: 70%;
+  min-height: 300px;
+  background-image: url("../pics/wire_frame.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.frontPageHighlight {
+  display: flex;
+  align-items: center;
+}
+
+.highlightNote {
+  max-width: 80%;
+}
+
+.highlightPic {
+  height: 100px;
+  width: 100px;
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+
+#highlight1 {
+  background-image: url("../pics/wire_frame_box.png");
+}
+
+#highlight2 {
+  background-image: url("../pics/wire_frame_box.png");
+}
