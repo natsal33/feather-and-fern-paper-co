@@ -8,6 +8,7 @@ import PrivacyPolicy from "./routes/privacy-policy";
 import TermsAndConditions from "./routes/terms-conditions";
 import Contact from "./routes/contact";
 import FAQ from "./routes/faq";
+import Gallery from "./routes/gallery";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: "gallery",
+        element: <Gallery />,
       },
       {
         path: "about",

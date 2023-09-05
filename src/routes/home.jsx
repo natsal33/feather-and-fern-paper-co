@@ -1,11 +1,14 @@
 import React from "react";
 import "./home.css";
 import "../pics/wire_frame.png";
+import Slideshow from "../Components/Slideshow.js";
 
 function Home() {
   return (
     <div id="homeContent">
-      <div id="scrollingGallery" />
+      <div>
+        <Slideshow />
+      </div>
       <div>
         <h3>Welcome to Hanna Chee Calligraphy</h3>
         <p>

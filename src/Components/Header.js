@@ -6,14 +6,18 @@ function Header() {
   return (
     <div className="Header">
       <nav className="navBarSection">
-        <NavLink to={"/"} className="navBarItem">
-          Home
+        <NavLink to={"/gallery"} className="navBarItem">
+          Gallery
         </NavLink>
         <NavLink to={"/about"} className="navBarItem">
           About
         </NavLink>
       </nav>
-      <h1 id="business-logo">Hanna Chee Calligraphy</h1>
+      <div id="business-logo">
+        <NavLink to={"/"}>
+          <h1>Hanna Chee Calligraphy</h1>
+        </NavLink>
+      </div>
       <nav className="navBarSection">
         <NavLink to={"/faq"} className="navBarItem">
           FAQ's

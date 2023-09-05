@@ -13,6 +13,11 @@ def home():
     return "Hello, World!"
 
 
+@app.route("/gallery")
+def home():
+    return "Hello, World!"
+
+
 @app.route("/about_me")
 def about_me():
     return "About Hanna Chee"

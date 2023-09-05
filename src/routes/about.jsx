@@ -6,51 +6,27 @@ function About() {
     <div id="about-section">
       <div id="artist-portrait" />
       <div id="about-commentary">
-        <h2>About Hanna Chee</h2>
+        <h2>About Me</h2>
         <p>
           {" "}
-          Introducing the enigmatic virtuoso of the handwritten word, Sir
-          Penmanship Prestige III, a luminary whose artistry transcends the
-          limits of ink and parchment. Descended from a clandestine lineage of
-          mystical scribes, he began wielding quills before mastering the art of
-          walking. Legend has it that his first word was an impeccable rendition
-          of the Magna Carta.
+          As a young girl, I would create handmade cards whenever my family
+          would have a birthday. It started as one flower and then it was a
+          field of flowers and then I started to incorporate cursive. Once I was
+          in University, I created my own planners, making sure every line was
+          straight with my ruler. I ultimately combined my love for handwriting
+          and design when I got engaged, creating my own wedding stationery and
+          day-of paper goods.
         </p>
+
         <p>
           {" "}
-          Prestige's avant-garde approach to calligraphy defies convention.
-          Rumor has it that he communes with ancient spirits of long-lost fonts,
-          channeling their essence into his work. His studio, rumored to be
-          nestled atop a cloud, is said to be a sanctuary of inspiration
-          furnished with levitating inkwells and self-writing parchment.
-        </p>
-        <p>
-          {" "}
-          World leaders and unicorns alike clamor for his inscriptions. He has
-          transcribed sonnets for mermaids and shopping lists for leprechauns.
-          Celestial beings petition him for handwritten horoscopes, delivered
-          via carrier pigeons adorned with quill-plucked feathers.
-        </p>
-        <p>
-          {" "}
-          In a clandestine society of penmen, Sir Penmanship Prestige III
-          remains an elusive luminary, leaving a trail of swooping letters and
-          embellished scrolls in his wake. He swears by an esoteric diet of
-          powdered ink and ambrosia, claiming it fuels his metaphysical
-          connection to calligraphic realms.
-        </p>
-        <p>
-          {" "}
-          Witnessing his craft is said to induce spontaneous rhyming couplets in
-          bystanders. Critics have dubbed his work as "transdimensional
-          graffiti," and connoisseurs insist that owning a piece of his
-          transcendent scribbles bestows eternal eloquence.
-        </p>
-        <p>
-          {" "}
-          In a world awash with digital text, Sir Penmanship Prestige III stands
-          as anachronistic art's last bastion, an enchanter who spins alphabetic
-          spells and conjures meaning with every stroke.
+          Creating personalized and beautifully handcrafted wedding stationery
+          allows me to be a part of one of the most important moments in
+          people’s lives. I am drawn to the creative process, intertwining
+          pieces of each couple to the work. My hope is to not only create
+          beautiful paper goods, but that they tell a story of the couple they
+          are celebrating. I am grateful for the opportunity to share my passion
+          with you.
         </p>
       </div>
     </div>
