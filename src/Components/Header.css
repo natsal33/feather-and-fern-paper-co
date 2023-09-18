@@ -3,7 +3,8 @@
   padding: 5px;
   display: inline-grid;
   grid-template-columns: repeat(12, 1fr);
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #5f5150;
+  text-decoration: none;
 }
 
 .navBarSection {
@@ -18,12 +19,51 @@
   padding: 7px;
   margin: 10px;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid #5f5150;
+  text-decoration: none;
+}
+.navBarItem:visited {
+  text-decoration: none;
+  color: #5f5150;
+}
+.navBarItem:hover {
+  text-decoration: none;
+  color: #5f5150;
+}
+.navBarItem:focus {
+  text-decoration: none;
+  color: #5f5150;
+}
+.navBarItem:hover,
+a:active {
+  text-decoration: none;
+  color: #b5c99a;
+}
+
+#business-logo-space {
+  grid-column: span 4;
+  text-align: center;
 }
 
 #business-logo {
-  grid-column: span 4;
-  text-align: center;
+  text-decoration: none;
+}
+#business-logo:visited {
+  text-decoration: none;
+  color: #5f5150;
+}
+#business-logo:hover {
+  text-decoration: none;
+  color: #5f5150;
+}
+#business-logo:focus {
+  text-decoration: none;
+  color: #5f5150;
+}
+#business-logo:hover,
+a:active {
+  text-decoration: none;
+  color: #b5c99a;
 }
 /* To revisit when doing responsive design editing */
 /* @media only screen and (min-width: 920px) {

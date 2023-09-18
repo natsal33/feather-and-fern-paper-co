@@ -1,6 +1,6 @@
 #homeContent {
-  width: 100vh;
-  height: 100vh;
+  width: 80%;
+  height: 80%;
   display: flexbox;
   justify-content: center;
 }

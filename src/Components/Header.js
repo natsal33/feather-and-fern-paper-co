@@ -13,9 +13,9 @@ function Header() {
           About
         </NavLink>
       </nav>
-      <div id="business-logo">
-        <NavLink to={"/"}>
-          <h1>Hanna Chee Calligraphy</h1>
+      <div id="business-logo-space">
+        <NavLink id="business-logo" to={"/"}>
+          <h1>Feather & Fern Paper Co.</h1>
         </NavLink>
       </div>
       <nav className="navBarSection">

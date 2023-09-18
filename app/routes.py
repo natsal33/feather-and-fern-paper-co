@@ -1,4 +1,4 @@
-from app import app
+from app.download_galleries import app
 
 
 @app.route("/", defaults={"path": ""})
