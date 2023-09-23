@@ -1,8 +1,8 @@
 import React from "react";
 import "./Slideshow.css";
-import slidePic1 from "../pics/scrolling-gallery-images/DEMO-PHOTO1.jpeg";
-import slidePic2 from "../pics/scrolling-gallery-images/DEMO-PHOTO2.jpeg";
-import slidePic3 from "../pics/scrolling-gallery-images/DEMO-PHOTO3.jpeg";
+import slidePic1 from "../pics/scrolling-gallery-images/SCROLLING-PHOTO1.jpeg";
+import slidePic2 from "../pics/scrolling-gallery-images/SCROLLING-PHOTO2.jpeg";
+import slidePic3 from "../pics/scrolling-gallery-images/SCROLLING-PHOTO3.jpeg";
 
 const slideShowImages = [slidePic1, slidePic2, slidePic3];
 const delay = 4000;

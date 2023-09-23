@@ -1,3 +1,7 @@
+#ContactPage {
+  margin: 20px;
+}
+
 #inputName {
   display: flex;
   align-items: center;

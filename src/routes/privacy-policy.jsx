@@ -3,7 +3,7 @@ import "./privacy-policy.css";
 
 function PrivacyPolicy() {
   return (
-    <div>
+    <div id="PrivacyPolicyPage">
       <h1>Privacy Policy</h1>
       <div id="privacyPolicyContent">
         <p>
@@ -20,11 +20,9 @@ function PrivacyPolicy() {
 
         <h2>How We Use Your Information</h2>
         <p>We may use your personal information to:</p>
-        <ul>
-          <li>Provide and improve our services</li>
-          <li>Respond to your inquiries</li>
-          <li>Send you promotional emails or updates</li>
-        </ul>
+        <li> Provide and improve our services</li>
+        <li> Respond to your inquiries</li>
+        <li> Send you promotional emails or updates</li>
 
         <h2>Information Sharing</h2>
         <p>
@@ -40,24 +38,10 @@ function PrivacyPolicy() {
           transmission over the internet is entirely secure.
         </p>
 
-        <h2>Cookies</h2>
-        <p>
-          We may use cookies to enhance your experience on our website. You can
-          adjust your browser settings to refuse cookies or alert you when
-          cookies are being sent.
-        </p>
-
         <h2>External Links</h2>
         <p>
           Our website may contain links to external sites. We are not
           responsible for the content or privacy practices of those sites.
-        </p>
-
-        <h2>Your Choices</h2>
-        <p>
-          You can opt out of receiving promotional emails from us by following
-          the instructions provided in the emails. You may also request to
-          access, correct, or delete your personal information by contacting us.
         </p>
 
         <h2>Changes to This Policy</h2>
@@ -72,7 +56,7 @@ function PrivacyPolicy() {
           at <a href="mailto:[contact email]">[natmsal33@gmail.com]</a>.
         </p>
 
-        <p>Last updated: [8/13/23]</p>
+        <p>Last updated: [9/23/2023]</p>
       </div>
     </div>
   );

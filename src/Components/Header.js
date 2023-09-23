@@ -6,10 +6,10 @@ function Header() {
   return (
     <div className="Header">
       <nav className="navBarSection">
-        <NavLink to={"/gallery"} className="navBarItem">
+        <NavLink to={"/gallery"} className="navBarItem subheader">
           Gallery
         </NavLink>
-        <NavLink to={"/about"} className="navBarItem">
+        <NavLink to={"/about"} className="navBarItem subheader">
           About
         </NavLink>
       </nav>
@@ -19,10 +19,10 @@ function Header() {
         </NavLink>
       </div>
       <nav className="navBarSection">
-        <NavLink to={"/faq"} className="navBarItem">
+        <NavLink to={"/faq"} className="navBarItem subheader">
           FAQ's
         </NavLink>
-        <NavLink to={"/contact"} className="navBarItem">
+        <NavLink to={"/contact"} className="navBarItem subheader">
           Contact
         </NavLink>
       </nav>

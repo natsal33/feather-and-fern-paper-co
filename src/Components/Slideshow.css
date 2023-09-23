@@ -1,7 +1,8 @@
 .slideshow {
-  margin: 0 auto;
+  margin: 15px auto;
   overflow: hidden;
-  max-width: 500px;
+  max-height: 450px;
+  max-width: 300px;
 }
 
 .slideshowSlider {
@@ -12,10 +13,13 @@
 .slide {
   display: inline-block;
   height: 400px;
-  width: 100%;
+  width: 300px;
   background-position-x: center;
-  background-size: auto 100%;
+  background-color: #afbb9f;
+  background-position-y: center;
+  background-size: 100% auto;
   background-repeat: no-repeat;
+  border-radius: 20px;
 }
 
 /* Buttons */
@@ -35,5 +39,5 @@
 }
 
 .slideshowDot.active {
-  background-color: #aac3ac;
+  background-color: #afbb9f;
 }

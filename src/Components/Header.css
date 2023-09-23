@@ -47,18 +47,19 @@ a:active {
 
 #business-logo {
   text-decoration: none;
+  color: #afbb9f;
 }
 #business-logo:visited {
   text-decoration: none;
-  color: #5f5150;
+  color: #afbb9f;
 }
 #business-logo:hover {
   text-decoration: none;
-  color: #5f5150;
+  color: #afbb9f;
 }
 #business-logo:focus {
   text-decoration: none;
-  color: #5f5150;
+  color: #afbb9f;
 }
 #business-logo:hover,
 a:active {
