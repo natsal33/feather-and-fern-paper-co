@@ -1,0 +1,39 @@
+* {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.font-main {
+  color: #a4ae8c;
+}
+
+.font-text {
+  color: #1b1b1b;
+}
+
+.font-lowlight {
+  color: #735a51;
+}
+
+.font-highlight {
+  color: #d5daf8;
+}
+
+.background-main {
+  background-color: #f2f2f2;
+}
+
+.background-secondary {
+  background-color: #a4ae8c;
+}
+
+.background-lowlight {
+  background-color: #735a51;
+}
+
+.background-highlight {
+  background-color: #d5daf8;
+}
+
+.background-color {
+  background-color: #e6cdaf;
+}

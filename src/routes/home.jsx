@@ -37,7 +37,7 @@ function Home() {
             section to highlight some of your favorite work and draw clients
             eyes in.
           </p>
-          <div className="highlightPic" id="highlight1" />
+          <div className="highlightPic" id="highlight2" />
         </div>
       </div>
     </div>

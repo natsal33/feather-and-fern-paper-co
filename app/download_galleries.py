@@ -16,17 +16,10 @@ AWS_REGION_NAME = credentials["Region"]
 AWS_SESSION_TOKEN = credentials["Token"]
 
 
-client = boto3.client(
-    "s3", aws_access_key_id=AWS_ACCESS_KEY, aws_secret_access_key=AWS_SECRET_KEY
-)
-s3 = boto3.resource(
-    "s3", aws_access_key_id=AWS_ACCESS_KEY, aws_secret_access_key=AWS_SECRET_KEY
-)
+client = boto3.client("s3", region_name="eu-central-1")
 
-list_bucket = client.list_buckets()
 
-s3_response = client.get_object(
-    Bucket="ben-n-natalie-photos", Key="Natalie__Ben/IMG-1.jpg"
-)
+list_bucket = client.list_objects(Bucket="feather-and-fern-paper-co")
 
-print(s3_response)
+
+print(list_bucket)

@@ -16,3 +16,14 @@
   background-size: 200px;
   background-repeat: no-repeat;
 }
+
+/* To revisit when doing responsive design editing */
+/* @media only screen and (min-width: 920px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .Header {
+    display: flex;
+  }
+}
+*/

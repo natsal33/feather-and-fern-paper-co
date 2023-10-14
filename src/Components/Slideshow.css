@@ -35,9 +35,19 @@
   border-radius: 50%;
   cursor: pointer;
   margin: 15px 7px 0px;
-  background-color: #c4c4c4;
 }
 
 .slideshowDot.active {
-  background-color: #afbb9f;
+  background-color: #d5daf8;
 }
+
+/* To revisit when doing responsive design editing */
+/* @media only screen and (min-width: 920px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .Header {
+    display: flex;
+  }
+}
+*/

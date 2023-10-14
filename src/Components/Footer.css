@@ -5,7 +5,7 @@
   padding: 5px;
   display: inline-grid;
   grid-template-columns: repeat(12, 1fr);
-  border-top: 3px solid black;
+  border-top: 3px solid #1b1b1b;
 }
 
 #footerNavBarSection {
@@ -22,3 +22,14 @@
   text-align: center;
   grid-column: span 12;
 }
+
+/* To revisit when doing responsive design editing */
+/* @media only screen and (min-width: 920px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .Header {
+    display: flex;
+  }
+}
+*/

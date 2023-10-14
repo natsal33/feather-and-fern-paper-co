@@ -1,3 +1,14 @@
 #PrivacyPolicyPage {
   max-width: 70%;
 }
+
+/* To revisit when doing responsive design editing */
+/* @media only screen and (min-width: 920px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .Header {
+    display: flex;
+  }
+}
+*/

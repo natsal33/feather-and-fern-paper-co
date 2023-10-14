@@ -1,5 +1,4 @@
 * {
-  font-family: "Cormorant Garamond", serif;
   width: auto;
   height: auto;
   text-align: center;
@@ -9,6 +8,7 @@
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 
 .content {
@@ -20,3 +20,14 @@
 .subheader {
   color: #afbb9f;
 }
+
+/* To revisit when doing responsive design editing */
+/* @media only screen and (min-width: 920px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .Header {
+    display: flex;
+  }
+}
+*/

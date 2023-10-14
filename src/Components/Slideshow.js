@@ -1,4 +1,5 @@
 import React from "react";
+import "../theme.css";
 import "./Slideshow.css";
 import slidePic1 from "../pics/scrolling-gallery-images/SCROLLING-PHOTO1.jpeg";
 import slidePic2 from "../pics/scrolling-gallery-images/SCROLLING-PHOTO2.jpeg";
@@ -40,7 +41,7 @@ function Slideshow() {
       >
         {slideShowImages.map((backgroundIndex, index) => (
           <div
-            className="slide"
+            className="slide backround-secondary"
             key={index}
             style={{ backgroundImage: `url(${backgroundIndex})` }}
           ></div>
@@ -51,7 +52,9 @@ function Slideshow() {
         {slideShowImages.map((_, idx) => (
           <div
             key={idx}
-            className={`slideshowDot${index === idx ? " active" : ""}`}
+            className={`slideshowDot background-secondary${
+              index === idx ? " active" : ""
+            }`}
             onClick={() => {
               setIndex(idx);
             }}
