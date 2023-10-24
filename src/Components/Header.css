@@ -1,26 +1,18 @@
+@import "../theme.css";
+
 .Header-box {
+  position: fixed;
+  top: 0;
   width: 100%;
   z-index: 3;
-  width: 100%;
-  padding: 5px;
-  margin: 5px;
-}
-
-#hidden-header {
-  color: #f2f2f2;
 }
 
 .Header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 4;
-  width: 100%;
-  padding: 5px;
   display: inline-grid;
   grid-template-columns: repeat(12, 1fr);
-  border-bottom: 3px solid #735a51;
+  border-bottom: 3px solid var(--theme-highlight);
   text-decoration: none;
+  background-color: var(--background-main);
 }
 
 .navBarSection {
@@ -31,7 +23,7 @@
 }
 
 .navBarItem {
-  border: solid 1px #735a51;
+  border: solid 1px var(--theme-highlight);
   border-radius: 15px;
   width: 4rem;
   padding: 15px;
@@ -39,23 +31,24 @@
   font-weight: bold;
   text-align: center;
   text-decoration: none;
+  color: var(--font-highlight);
 }
 .navBarItem:visited {
   text-decoration: none;
-  color: #a4ae8c;
+  color: var(--font-highlight);
 }
 .navBarItem:hover {
   text-decoration: none;
-  color: #a4ae8c;
+  color: var(--font-lowlight);
 }
 .navBarItem:focus {
   text-decoration: none;
-  color: #a4ae8c;
+  color: var(--font-lowlight);
 }
 .navBarItem:hover,
 a:active {
   text-decoration: none;
-  color: #735a51;
+  color: var(--font-lowlight);
 }
 
 #business-logo-space {
@@ -65,23 +58,24 @@ a:active {
 
 #business-logo {
   text-decoration: none;
+  color: var(--font-primary);
 }
 #business-logo:visited {
   text-decoration: none;
-  color: #a4ae8c;
+  color: var(--font-primary);
 }
 #business-logo:hover {
   text-decoration: none;
-  color: #a4ae8c;
+  color: var(--font-primary);
 }
 #business-logo:focus {
   text-decoration: none;
-  color: #a4ae8c;
+  color: var(--font-primary);
 }
 #business-logo:hover,
 a:active {
   text-decoration: none;
-  color: #a4ae8c;
+  color: var(--font-primary);
 }
 /* To revisit when doing responsive design editing */
 /* @media only screen and (min-width: 920px) {

@@ -5,7 +5,7 @@ import "./PageBody.css";
 
 function PageBody() {
   return (
-    <div id="PageBody" className="background-main">
+    <div id="PageBody">
       <Outlet />
     </div>
   );

@@ -6,7 +6,7 @@ import slidePic2 from "../pics/scrolling-gallery-images/SCROLLING-PHOTO2.jpeg";
 import slidePic3 from "../pics/scrolling-gallery-images/SCROLLING-PHOTO3.jpeg";
 
 const slideShowImages = [slidePic1, slidePic2, slidePic3];
-const delay = 4000;
+const delay = 10000;
 
 function Slideshow() {
   const [index, setIndex] = React.useState(0);
@@ -41,7 +41,7 @@ function Slideshow() {
       >
         {slideShowImages.map((backgroundIndex, index) => (
           <div
-            className="slide backround-secondary"
+            className="slide"
             key={index}
             style={{ backgroundImage: `url(${backgroundIndex})` }}
           ></div>
@@ -52,9 +52,7 @@ function Slideshow() {
         {slideShowImages.map((_, idx) => (
           <div
             key={idx}
-            className={`slideshowDot background-secondary${
-              index === idx ? " active" : ""
-            }`}
+            className={`slideshowDot${index === idx ? " active" : ""}`}
             onClick={() => {
               setIndex(idx);
             }}

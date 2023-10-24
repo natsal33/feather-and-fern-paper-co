@@ -10,7 +10,7 @@ function Home() {
         <Slideshow />
       </div>
       <div>
-        <h2 className="subheader">Welcome to Feather & Fern Paper Co.</h2>
+        <h2>Welcome to Feather & Fern Paper Co.</h2>
         <p>
           Here is where you can put some content to draw the eyes of potential
           clients and talk al little bit about yourself. A little bit about your

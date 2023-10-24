@@ -1,24 +1,7 @@
-* {
-  width: auto;
-  height: auto;
-  text-align: center;
-}
+@import "../theme.css";
+
 #root {
-  width: 100%;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  z-index: 1;
-}
-
-.content {
-  width: 100%;
-  min-height: 100%;
-  display: block;
-}
-
-.subheader {
-  color: #afbb9f;
 }
 
 /* To revisit when doing responsive design editing */

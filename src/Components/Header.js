@@ -6,26 +6,25 @@ import "./Header.css";
 function Header() {
   return (
     <div className="Header-box">
-      <h1 id="hidden-header">Feather & Fern Paper Co.</h1>
-      <div className="Header background-main">
+      <div className="Header">
         <nav className="navBarSection">
-          <NavLink to={"/gallery"} className="navBarItem subheader font-mian">
+          <NavLink to={"/gallery"} className="navBarItem">
             Gallery
           </NavLink>
-          <NavLink to={"/about"} className="navBarItem subheader font-main">
+          <NavLink to={"/about"} className="navBarItem">
             About
           </NavLink>
         </nav>
         <div id="business-logo-space">
-          <NavLink id="business-logo" className="font-main" to={"/"}>
+          <NavLink id="business-logo" to={"/"}>
             <h1>Feather & Fern Paper Co.</h1>
           </NavLink>
         </div>
         <nav className="navBarSection">
-          <NavLink to={"/faq"} className="navBarItem subheader font-main">
+          <NavLink to={"/faq"} className="navBarItem">
             FAQ's
           </NavLink>
-          <NavLink to={"/contact"} className="navBarItem subheader font-main">
+          <NavLink to={"/contact"} className="navBarItem">
             Contact
           </NavLink>
         </nav>

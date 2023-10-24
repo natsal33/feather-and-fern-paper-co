@@ -7,11 +7,9 @@ import "./root.css";
 export default function Root() {
   return (
     <div id="root">
-      <div className="content background-main">
-        <Header />
-        <PageBody />
-        <Footer />
-      </div>
+      <Header />
+      <PageBody />
+      <Footer />
     </div>
   );
 }

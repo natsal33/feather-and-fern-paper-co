@@ -1,25 +1,27 @@
+@import "../theme.css";
+
 .slideshow {
   margin: 15px auto;
   overflow: hidden;
   max-height: 450px;
-  max-width: 300px;
+  max-width: 530px;
 }
 
 .slideshowSlider {
   white-space: nowrap;
-  transition: ease 1000ms;
+  transition: ease 3000ms;
 }
 
 .slide {
   display: inline-block;
   height: 400px;
-  width: 300px;
+  width: 530px;
   background-position-x: center;
-  background-color: #afbb9f;
   background-position-y: center;
   background-size: 100% auto;
   background-repeat: no-repeat;
   border-radius: 20px;
+  background-color: var(--theme-highlight);
 }
 
 /* Buttons */
@@ -35,10 +37,11 @@
   border-radius: 50%;
   cursor: pointer;
   margin: 15px 7px 0px;
+  background-color: var(--theme-primary-highlight);
 }
 
 .slideshowDot.active {
-  background-color: #d5daf8;
+  background-color: var(--theme-highlight);
 }
 
 /* To revisit when doing responsive design editing */

@@ -1,9 +1,14 @@
+@import "../theme.css";
+
 #PageBody {
-  min-height: 100vh;
   display: flex;
+  padding: 0px 10%;
+  max-width: 70%;
+  padding-top: 200px;
   justify-content: center;
   position: relative;
   z-index: 2;
+  background-color: var(--background-main);
 }
 
 /* To revisit when doing responsive design editing */

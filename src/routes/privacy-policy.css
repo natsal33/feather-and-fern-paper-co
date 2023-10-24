@@ -1,5 +1,6 @@
+@import "../theme.css";
+
 #PrivacyPolicyPage {
-  max-width: 70%;
 }
 
 /* To revisit when doing responsive design editing */

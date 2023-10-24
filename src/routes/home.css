@@ -1,6 +1,6 @@
+@import "../theme.css";
+
 #homeContent {
-  width: 80%;
-  height: 80%;
   display: flexbox;
   justify-content: center;
   margin: 20px;
@@ -25,10 +25,11 @@
 }
 
 .highlightPic {
-  height: 200px;
-  width: 200px;
+  min-height: 12rem;
+  min-width: 12rem;
   background-repeat: no-repeat;
-  background-size: 200px;
+  background-size: 12rem;
+  margin: 10px 25px;
 }
 
 #highlight1 {

@@ -1,11 +1,14 @@
+@import "../theme.css";
+
 #Footer {
-  position: relative;
-  bottom: 0px;
+  font-weight: bold;
   width: 100%;
   padding: 5px;
+  z-index: 4;
   display: inline-grid;
   grid-template-columns: repeat(12, 1fr);
-  border-top: 3px solid #1b1b1b;
+  background-color: var(--background-main);
+  border-top: 3px solid var(--theme-highlight);
 }
 
 #footerNavBarSection {
@@ -15,12 +18,36 @@
 }
 
 .footerNavBarItem {
+  width: 6rem;
+  padding: 15px;
+  margin: 10px;
   text-align: center;
+  text-decoration: none;
+  color: var(--font-highlight);
+}
+.footerNavBarItem:visited {
+  text-decoration: none;
+  color: var(--font-highlight);
+}
+
+.footerNavBarItem:hover {
+  text-decoration: none;
+  color: var(--font-lowlight);
+}
+.footerNavBarItem:focus {
+  text-decoration: none;
+  color: var(--font-lowlight);
+}
+.footerNavBarItem:hover,
+a:active {
+  text-decoration: none;
+  color: var(--font-lowlight);
 }
 
 #footerSignature {
   text-align: center;
   grid-column: span 12;
+  color: var(--font-primary);
 }
 
 /* To revisit when doing responsive design editing */
