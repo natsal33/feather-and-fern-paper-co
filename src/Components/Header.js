@@ -51,7 +51,9 @@ function Header() {
         </nav>
         <div id="business-logo-space">
           <NavLink id="business-logo" to={"/"}>
-            <h1>Feather & Fern Paper Co.</h1>
+            <h1>
+              Feather & Fern <br /> Paper Co.
+            </h1>
           </NavLink>
         </div>
         <nav className="navBarSection">

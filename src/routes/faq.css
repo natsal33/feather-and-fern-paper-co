@@ -6,13 +6,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-items: center;
 }
 
-h3 {
-  font-size: 25px;
-  border: solid 2px var(--theme-primary-highlight);
-  border-radius: 20px;
+#FAQ h3 {
+  font-size: 22px;
   padding: 5px;
+  margin: 10px;
+  border-bottom: 1px var(--theme-highlight);
   max-width: 480px;
 }
 

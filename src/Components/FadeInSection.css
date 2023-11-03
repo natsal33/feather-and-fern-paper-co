@@ -3,6 +3,7 @@ section {
   visibility: hidden;
   transition: opacity 2s ease-out, opacity 2s ease-out;
   will-change: opacity, visibility;
+  width: 100%;
 }
 
 .is-visible {

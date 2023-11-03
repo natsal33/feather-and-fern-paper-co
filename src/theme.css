@@ -11,6 +11,8 @@
 
   font-family: "Cormorant Garamond", serif;
   color: var(--font-lowlight);
+  padding: 0px;
+  margin: 0px;
 }
 
 .page-header {
@@ -26,6 +28,7 @@
 }
 
 p {
+  padding: 10px;
 }
 
 h1 {
@@ -35,11 +38,18 @@ h1 {
 h2 {
   color: var(--font-lowlight);
   text-align: center;
+  border-bottom: 3px var(--theme-highlight) double;
+  padding: 15px;
+  width: 100%;
+  max-width: 100%;
+  letter-spacing: 2px;
 }
 
 h3 {
   color: var(--font-primary);
   text-align: center;
+  padding: 15px;
+  letter-spacing: 1.5px;
 }
 
 h4 {
@@ -47,6 +57,7 @@ h4 {
   text-align: center;
   font-weight: 800;
   font-size: 18px;
+  padding: 15px;
 }
 
 a {

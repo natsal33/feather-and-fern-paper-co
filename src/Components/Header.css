@@ -30,6 +30,7 @@
   text-align: center;
   text-decoration: none;
   color: var(--font-highlight);
+  letter-spacing: 1.5px;
 }
 .navBarItem:visited {
   text-decoration: none;
@@ -55,6 +56,7 @@ a:active {
 }
 
 #business-logo {
+  letter-spacing: 5px;
   text-decoration: none;
   color: var(--font-primary);
 }

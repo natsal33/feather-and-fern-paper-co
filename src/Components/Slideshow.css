@@ -5,6 +5,7 @@
   overflow: hidden;
   max-height: 450px;
   max-width: 530px;
+  transition: ease 700ms;
 }
 
 .slideshowSlider {

@@ -7,21 +7,19 @@ import FadeInSection from "../Components/FadeInSection";
 
 function Home() {
   return (
-    <div id="homeContent">
-      <FadeInSection>
+    <FadeInSection>
+      <div id="homeContent">
         <Slideshow />
-      </FadeInSection>
-      <FadeInSection>
-        <h2>Welcome to Feather & Fern Paper Co.</h2>
-        <p>
+        <h2 id="welcome-statement">Welcome to Feather & Fern Paper Co.</h2>
+        <p id="intro">
           Here is where you can put some content to draw the eyes of potential
           clients and talk al little bit about yourself. A little bit about your
           style, a bit about your work, and talk high level about your
           offerings. Something to draw readers in.
         </p>
         <HomepageHighlights />
-      </FadeInSection>
-    </div>
+      </div>
+    </FadeInSection>
   );
 }
 

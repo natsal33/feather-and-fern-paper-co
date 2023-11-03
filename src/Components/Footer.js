@@ -13,7 +13,10 @@ function CreatedBy() {
           Terms and Conditions
         </NavLink>
         <div id="footerSignature">
-          <h4>Feather & Fern Paper Co.</h4>
+          <a href="/">
+            <h4>Feather & Fern Paper Co.</h4>
+          </a>
+
           <p>All rights reserved.</p>
         </div>
         <NavLink to={"/faq"} className="footerNavBarItem">
