@@ -53,10 +53,12 @@ function PrivacyPolicy() {
         <h2>Contact Us</h2>
         <p>
           If you have any questions about this Privacy Policy, please contact us
-          at <a href="mailto:[contact email]">[natmsal33@gmail.com]</a>.
+          at{" "}
+          <a href="mailto:[contact email]">[featherandfernpaperco@gmail.com]</a>
+          .
         </p>
 
-        <p>Last updated: [9/23/2023]</p>
+        <p>Last updated: [11/2/2023]</p>
       </div>
     </div>
   );

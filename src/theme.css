@@ -2,10 +2,10 @@
   --font-primary: #a4ae8c;
   --font-highlight: #8a8787;
   --font-lowlight: #4a4949;
-  --background-main: #ffffff;
+  --background-main: rgb(255, 255, 255);
   --theme-primary: #a4ae8c;
   --theme-primary-highlight: #d0d5c2;
-  --theme-secondary: #e6cdaf;
+  --theme-secondary: #c5b097;
   --theme-highlight: #8a8787;
   --theme-lowlight: #3b3b3b;
 
@@ -40,4 +40,28 @@ h2 {
 h3 {
   color: var(--font-primary);
   text-align: center;
+}
+
+h4 {
+  color: var(--theme-secondary);
+  text-align: center;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+a {
+  color: var(--font-highlight);
+}
+a:visited {
+  color: var(--font-highlight);
+}
+a:hover {
+  color: var(--font-primary);
+}
+a:focus {
+  color: var(--font-highlight);
+}
+a:hover,
+a:active {
+  color: var(--font-primary);
 }

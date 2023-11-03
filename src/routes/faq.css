@@ -1,6 +1,19 @@
 @import "../theme.css";
 
 #FAQ {
+  max-width: 800px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  font-size: 25px;
+  border: solid 2px var(--theme-primary-highlight);
+  border-radius: 20px;
+  padding: 5px;
+  max-width: 480px;
 }
 
 /* To revisit when doing responsive design editing */

@@ -20,7 +20,7 @@
   background-position-y: center;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  border-radius: 20px;
+  border-radius: 10%;
   background-color: var(--theme-highlight);
 }
 

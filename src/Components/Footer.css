@@ -50,6 +50,10 @@ a:active {
   color: var(--font-primary);
 }
 
+#footerSignature h4 {
+  color: var(--font-primary);
+}
+
 /* To revisit when doing responsive design editing */
 /* @media only screen and (min-width: 920px) {
 }

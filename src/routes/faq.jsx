@@ -18,9 +18,9 @@ function FAQ() {
         2. How do I inquire about paper for an event/wedding?
       </h3>
       <p>
-        Navigate to the Contact page, fill out the form with your event/wedding
-        information and I'll get back to you to discus some ideas and
-        information on my services.
+        Navigate to the <a href="/contact">Contact Form</a>, fill out the form
+        with your event/wedding information and I'll get back to you to discus
+        some ideas and information on my services.
       </p>
       <h3 className="subheader">
         3. Can I customize the design and wording of my invitations?
@@ -86,11 +86,11 @@ function FAQ() {
         invoice. Payments can be made securely through our online payment portal
         using credit/debit cards or other accepted payment methods.
       </p>
-      <p>
-        For any other questions or inquiries, feel free to reach out to our
-        dedicated customer service team at [contact information]. We're thrilled
-        to be a part of your wedding journey and look forward to creating
-        unforgettable invitations for your special day!
+      <p style={{ fontWeight: "bold" }}>
+        For any other questions or inquiries, feel free to reach out to me at{" "}
+        <a href="mailto:[contact email]">[featherandfernpaperco@gmail.com]</a>.
+        We're thrilled to be a part of your wedding journey and look forward to
+        creating unforgettable invitations for your special day!
       </p>
     </div>
   );
