@@ -9,6 +9,10 @@
   justify-items: center;
 }
 
+#FAQ h2 {
+  width: 100%;
+}
+
 #FAQ h3 {
   font-size: 22px;
   padding: 5px;
