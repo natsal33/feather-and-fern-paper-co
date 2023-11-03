@@ -98,7 +98,7 @@ function Contact() {
               name="other_details"
               as="textarea"
               rows="5"
-              cols="50"
+              cols="40"
             ></Form.Control>
             <br />
             <Button type="submit" value="Send">
