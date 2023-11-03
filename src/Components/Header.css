@@ -1,89 +1,82 @@
 @import "../theme.css";
 
-#Header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: inline-grid;
-  grid-template-columns: repeat(12, 1fr);
-  border-bottom: 3px solid var(--theme-highlight);
-  text-decoration: none;
-  background-color: var(--background-main);
-  z-index: 3;
-}
-
-.navBarSection {
-  grid-column: span 4;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.navBarItem {
-  border: solid 1px var(--theme-highlight);
-  border-radius: 15px;
-  width: 4rem;
-  padding: 15px;
-  margin: 10px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  color: var(--font-highlight);
-  letter-spacing: 1.5px;
-}
-.navBarItem:visited {
-  text-decoration: none;
-  color: var(--font-highlight);
-}
-.navBarItem:hover {
-  text-decoration: none;
-  color: var(--font-lowlight);
-}
-.navBarItem:focus {
-  text-decoration: none;
-  color: var(--font-lowlight);
-}
-.navBarItem:hover,
-a:active {
-  text-decoration: none;
-  color: var(--font-lowlight);
-}
-
-#business-logo-space {
-  grid-column: span 4;
-  text-align: center;
-}
-
-#business-logo {
-  letter-spacing: 5px;
-  text-decoration: none;
-  color: var(--font-primary);
-}
-#business-logo:visited {
-  text-decoration: none;
-  color: var(--font-primary);
-}
-#business-logo:hover {
-  text-decoration: none;
-  color: var(--font-primary);
-}
-#business-logo:focus {
-  text-decoration: none;
-  color: var(--font-primary);
-}
-#business-logo:hover,
-a:active {
-  text-decoration: none;
-  color: var(--font-primary);
-}
 /* To revisit when doing responsive design editing */
-/* @media only screen and (min-width: 920px) {
-}
+@media only screen and (min-width: 650px) {
+  #Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: repeat(12, 1fr);
+    border-bottom: 3px solid var(--theme-highlight);
+    text-decoration: none;
+    background-color: var(--background-main);
+    z-index: 3;
+  }
 
-@media only screen and (max-width: 600px) {
-  .Header {
+  .navBarSection {
+    grid-column: span 4;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navBarItem {
+    border: solid 1px var(--theme-highlight);
+    border-radius: 15px;
+    width: 4rem;
+    padding: 15px;
+    margin: 10px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: var(--font-highlight);
+    letter-spacing: 1.5px;
+  }
+  .navBarItem:visited {
+    text-decoration: none;
+    color: var(--font-highlight);
+  }
+  .navBarItem:hover {
+    text-decoration: none;
+    color: var(--font-lowlight);
+  }
+  .navBarItem:focus {
+    text-decoration: none;
+    color: var(--font-lowlight);
+  }
+  .navBarItem:hover,
+  a:active {
+    text-decoration: none;
+    color: var(--font-lowlight);
+  }
+
+  #business-logo-space {
+    grid-column: span 4;
+    text-align: center;
+  }
+
+  #business-logo {
+    letter-spacing: 5px;
+    text-decoration: none;
+    color: var(--font-primary);
+  }
+  #business-logo:visited {
+    text-decoration: none;
+    color: var(--font-primary);
+  }
+  #business-logo:hover {
+    text-decoration: none;
+    color: var(--font-primary);
+  }
+  #business-logo:focus {
+    text-decoration: none;
+    color: var(--font-primary);
+  }
+  #business-logo:hover,
+  a:active {
+    text-decoration: none;
+    color: var(--font-primary);
   }
 }
-*/

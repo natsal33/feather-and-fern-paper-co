@@ -1,46 +1,98 @@
-#frontPageHighlightArea {
-  align-items: center;
-  position: relative;
+@import "../theme.css";
+
+/* To revisit when doing responsive design editing */
+@media only screen and (min-width: 650px) {
+  #frontPageHighlightArea {
+    align-items: center;
+    position: relative;
+  }
+
+  .highlightItem {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15px, max-content));
+  }
+
+  .highlightNote {
+    background-color: rgb(255, 255, 255, 0.4);
+    opacity: 1;
+    padding: 15px 20px;
+    line-height: 22px;
+  }
+
+  .highlightNote.right {
+    transform: translateX(3rem);
+    text-align: right;
+  }
+  .highlightNote.left {
+    transform: translateX(-3rem);
+  }
+
+  .highlightPic {
+    min-height: 13rem;
+    min-width: 13rem;
+    background-repeat: no-repeat;
+    background-size: 13rem;
+    margin: 10px 25px;
+    box-shadow: 0 0 8px 8px white inset;
+    border-radius: 12%;
+  }
+
+  #highlightLeftPic {
+    background-image: url("../pics/highlight-images/highlight-script1.jpeg");
+  }
+
+  #highlightRightPic {
+    background-image: url("../pics/highlight-images/highlight-script2.jpeg");
+  }
 }
 
-.highlightItem {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  align-items: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15px, max-content));
-}
+@media only screen and (max-width: 649px) {
+  #frontPageHighlightArea {
+    align-items: center;
+    position: relative;
+  }
 
-.highlightNote {
-  background-color: rgb(255, 255, 255, 0.4);
-  opacity: 1;
-  padding: 15px 20px;
-}
+  .highlightItem {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.highlightNote.right {
-  transform: translateX(3rem);
-  text-align: right;
-}
-.highlightNote.left {
-  transform: translateX(-3rem);
-}
+  .highlightNote {
+    background-color: rgb(255, 255, 255, 0.4);
+    opacity: 1;
+    padding: 15px 20px;
+    line-height: 22px;
+    text-align: center;
+  }
 
-.highlightPic {
-  min-height: 12rem;
-  min-width: 12rem;
-  background-repeat: no-repeat;
-  background-size: 12rem;
-  margin: 10px 25px;
-  box-shadow: 0 0 8px 8px white inset;
-  border-radius: 12%;
-}
+  .highlightNote.right {
+  }
+  .highlightNote.left {
+  }
 
-#highlightLeftPic {
-  background-image: url("../pics/highlight-images/highlight-script1.jpeg");
-}
+  .highlightPic {
+    min-height: 13rem;
+    min-width: 13rem;
+    background-repeat: no-repeat;
+    background-size: 13rem;
+    margin: 10px 25px;
+    box-shadow: 0 0 8px 8px white inset;
+    border-radius: 12%;
+  }
 
-#highlightRightPic {
-  background-image: url("../pics/highlight-images/highlight-script2.jpeg");
+  #highlightLeftPic {
+    background-image: url("../pics/highlight-images/highlight-script1.jpeg");
+  }
+
+  #highlightRightPic {
+    background-image: url("../pics/highlight-images/highlight-script2.jpeg");
+  }
 }

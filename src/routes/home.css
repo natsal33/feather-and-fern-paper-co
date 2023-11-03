@@ -28,14 +28,67 @@
   width: 60%;
   font-weight: 700;
   letter-spacing: 1.5px;
+  line-height: 25px;
 }
 /* To revisit when doing responsive design editing */
-/* @media only screen and (min-width: 920px) {
-}
-
-@media only screen and (max-width: 600px) {
-  .Header {
+@media only screen and (min-width: 650px) {
+  #homeContent {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 20px;
+  }
+
+  #scrollingGallery {
+    padding: 10px;
+    margin: 10px;
+    min-width: 70%;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+
+  #welcome-statement {
+    letter-spacing: 1.5px;
+  }
+
+  #intro {
+    text-align: center;
+    width: 60%;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 25px;
   }
 }
-*/
+
+@media only screen and (max-width: 649px) {
+  #homeContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 20px;
+  }
+
+  #scrollingGallery {
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+
+  #welcome-statement {
+    letter-spacing: 1.5px;
+  }
+
+  #intro {
+    text-align: center;
+    width: 60%;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+  }
+}
