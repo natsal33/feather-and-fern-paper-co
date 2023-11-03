@@ -1,1 +1,5 @@
-@import "../theme.css";
+@import "./theme.css";
+
+#error-page {
+  text-align: center;
+}

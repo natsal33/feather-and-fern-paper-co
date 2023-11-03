@@ -1,6 +1,7 @@
 @import "../theme.css";
 
 #termsAndConditions {
+  width: 60vw;
 }
 
 /* To revisit when doing responsive design editing */

@@ -1,18 +1,16 @@
 @import "../theme.css";
 
-.Header-box {
+#Header {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  z-index: 3;
-}
-
-.Header {
   display: inline-grid;
   grid-template-columns: repeat(12, 1fr);
   border-bottom: 3px solid var(--theme-highlight);
   text-decoration: none;
   background-color: var(--background-main);
+  z-index: 3;
 }
 
 .navBarSection {

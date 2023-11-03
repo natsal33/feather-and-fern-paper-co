@@ -1,6 +1,8 @@
 @import "../theme.css";
 
 #PrivacyPolicyPage {
+  width: 60vw;
+  text-align: left;
 }
 
 /* To revisit when doing responsive design editing */

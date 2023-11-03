@@ -1,10 +1,9 @@
 @import "../theme.css";
 
 #PageBody {
+  flex: 1;
   display: flex;
-  padding: 0px 10%;
-  max-width: 70%;
-  padding-top: 200px;
+  max-width: 80%;
   justify-content: center;
   position: relative;
   z-index: 2;

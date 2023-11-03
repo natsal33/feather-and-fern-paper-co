@@ -15,9 +15,11 @@
 
 .page-header {
   color: var(--font-lowlight);
+  text-align: center;
 }
 .sub-header {
   color: var(--font-primary);
+  text-align: center;
 }
 .text {
   color: var(--font-highlight);
@@ -27,12 +29,15 @@ p {
 }
 
 h1 {
+  text-align: center;
 }
 
 h2 {
   color: var(--font-lowlight);
+  text-align: center;
 }
 
 h3 {
   color: var(--font-primary);
+  text-align: center;
 }
