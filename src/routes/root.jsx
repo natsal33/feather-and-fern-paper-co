@@ -19,17 +19,18 @@ export default function Root() {
   });
 
   return (
-    <div id="root">
+    <div>
       {isDesktop ? (
-        <div>
+        <div id="root">
           <Header />
           <PageBody />
           <Footer />
         </div>
       ) : (
-        <div>
+        <div id="root">
           <MobileSidebar />
           <PageBody />
+          <Footer />
         </div>
       )}
     </div>

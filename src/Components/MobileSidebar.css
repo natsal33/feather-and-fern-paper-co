@@ -1,96 +1,97 @@
 @import "../theme.css";
 
 /* To revisit when doing responsive design editing */
+@media only screen and (max-width: 649px) {
+  #header-box {
+    width: 100vw;
+  }
 
-#header-box {
-  width: 100vw;
-}
+  #Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border-bottom: 3px solid var(--theme-highlight);
+    text-decoration: none;
+    background-color: var(--background-main);
+    z-index: 3;
+  }
 
-#Header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  border-bottom: 3px solid var(--theme-highlight);
-  text-decoration: none;
-  background-color: var(--background-main);
-  z-index: 3;
-}
+  #business-logo {
+    letter-spacing: 5px;
+    width: 10rem;
+    height: 15rem;
+    text-decoration: none;
+    color: var(--font-primary);
+  }
 
-#business-logo {
-  letter-spacing: 5px;
-  width: 10rem;
-  height: 15rem;
-  text-decoration: none;
-  color: var(--font-primary);
-}
+  h1 {
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin: 5px;
+  }
+  #business-logo:visited {
+    text-decoration: none;
+    color: var(--font-primary);
+  }
+  #business-logo:hover {
+    text-decoration: none;
+    color: var(--font-primary);
+  }
+  #business-logo:focus {
+    text-decoration: none;
+    color: var(--font-primary);
+  }
+  #business-logo:hover,
+  a:active {
+    text-decoration: none;
+    color: var(--font-primary);
+  }
 
-h1 {
-  letter-spacing: 1px;
-  line-height: 30px;
-  margin: 5px;
-}
-#business-logo:visited {
-  text-decoration: none;
-  color: var(--font-primary);
-}
-#business-logo:hover {
-  text-decoration: none;
-  color: var(--font-primary);
-}
-#business-logo:focus {
-  text-decoration: none;
-  color: var(--font-primary);
-}
-#business-logo:hover,
-a:active {
-  text-decoration: none;
-  color: var(--font-primary);
-}
+  .navBarSection {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-.navBarSection {
-  grid-column: span 4;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
+  .navBarItem {
+    border: solid 1px var(--theme-highlight);
+    border-radius: 15px;
+    width: 5rem;
+    height: 3rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: var(--font-highlight);
+    letter-spacing: 1.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navBarItem:visited {
+    text-decoration: none;
+    color: var(--font-highlight);
+  }
+  .navBarItem:hover {
+    text-decoration: none;
+    color: var(--font-lowlight);
+  }
+  .navBarItem:focus {
+    text-decoration: none;
+    color: var(--font-lowlight);
+  }
+  .navBarItem:hover,
+  a:active {
+    text-decoration: none;
+    color: var(--font-lowlight);
+  }
 
-.navBarItem {
-  border: solid 1px var(--theme-highlight);
-  border-radius: 15px;
-  width: 5rem;
-  height: 3rem;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  color: var(--font-highlight);
-  letter-spacing: 1.5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.navBarItem:visited {
-  text-decoration: none;
-  color: var(--font-highlight);
-}
-.navBarItem:hover {
-  text-decoration: none;
-  color: var(--font-lowlight);
-}
-.navBarItem:focus {
-  text-decoration: none;
-  color: var(--font-lowlight);
-}
-.navBarItem:hover,
-a:active {
-  text-decoration: none;
-  color: var(--font-lowlight);
-}
-
-#business-logo-space {
-  grid-column: span 4;
-  text-align: center;
+  #business-logo-space {
+    grid-column: span 4;
+    text-align: center;
+  }
 }
