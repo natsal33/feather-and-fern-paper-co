@@ -16,7 +16,6 @@ function Header() {
       setHeaderHeight(headerElement.getBoundingClientRect().height);
     }
     setHeaderElement(document.getElementById("Header"));
-    console.log("Header Height: " + headerHeight);
 
     // sets windowSize according to event handler that monitors window resizing
   }, [headerElement, headerHeight, windowSize]);
