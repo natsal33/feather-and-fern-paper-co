@@ -1,0 +1,28 @@
+#frontPageHighlightArea {
+  align-items: center;
+  position: relative;
+}
+
+.highlightItem {
+  display: flex;
+}
+
+.highlightNote {
+  max-width: 80%;
+}
+
+.highlightPic {
+  min-height: 12rem;
+  min-width: 12rem;
+  background-repeat: no-repeat;
+  background-size: 12rem;
+  margin: 10px 25px;
+}
+
+#highlightLeftPic {
+  background-image: url("../pics/highlight-images/highlight-script1.jpeg");
+}
+
+#highlightRightPic {
+  background-image: url("../pics/highlight-images/highlight-script2.jpeg");
+}

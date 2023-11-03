@@ -15,31 +15,6 @@
   background-position-x: center;
 }
 
-.frontPageHighlight {
-  display: flex;
-  align-items: center;
-}
-
-.highlightNote {
-  max-width: 80%;
-}
-
-.highlightPic {
-  min-height: 12rem;
-  min-width: 12rem;
-  background-repeat: no-repeat;
-  background-size: 12rem;
-  margin: 10px 25px;
-}
-
-#highlight1 {
-  background-image: url("../pics/highlight-images/highlight-script1.jpeg");
-}
-
-#highlight2 {
-  background-image: url("../pics/highlight-images/highlight-script2.jpeg");
-}
-
 /* To revisit when doing responsive design editing */
 /* @media only screen and (min-width: 920px) {
 }
