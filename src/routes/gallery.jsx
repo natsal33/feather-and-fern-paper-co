@@ -45,8 +45,8 @@ function Gallery() {
   return (
     <div>
       <h2>Gallery Page coming soon!</h2>
-      <p>{get_response}</p>
-      <div id="gallery-grid">{galleryPics}</div>
+      {/* <p>{get_response}</p> */}
+      {/* <div id="gallery-grid">{galleryPics}</div> */}
     </div>
   );
 }
