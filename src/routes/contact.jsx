@@ -1,7 +1,5 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
 import Form from "react-bootstrap/Form";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
@@ -15,10 +13,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_be0p4oo",
-        "template_mfbxpw6",
+        "service_7riuwsf",
+        "template_y7eujze",
         form.current,
-        "xHUVCzuEFO2xdh_O4"
+        "TGffO3tGyrt6KQaz9"
       )
       .then(
         (result) => {
