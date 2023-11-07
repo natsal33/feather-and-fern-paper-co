@@ -4,12 +4,15 @@ import Form from "react-bootstrap/Form";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
 import FadeInSection from "../Components/FadeInSection";
+import { BsPatchCheck } from "react-icons/bs";
 
 function Contact() {
   const form = React.useRef();
+  const [formSubmitted, setFormSubmitted] = React.useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setFormSubmitted(true);
 
     emailjs
       .sendForm(
@@ -32,6 +35,16 @@ function Contact() {
     <div id="ContactPage" className="p-2 mb-4">
       <FadeInSection>
         <h2>Want a Consultation?</h2>
+        <div>
+          {formSubmitted ? (
+            <h3>
+              {" "}
+              <BsPatchCheck /> Your form has been submitted
+            </h3>
+          ) : (
+            <div />
+          )}
+        </div>
         <Form ref={form} onSubmit={sendEmail}>
           <div id="contactPage">
             <div className="inputBox">
