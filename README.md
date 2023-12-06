@@ -14,7 +14,7 @@ This website was designed for Fern and Feather Paper Co., a custom calligraphy b
 
 ### Contact Form Page
 
-<img src='src/pics/GitHub_Demo_1.png'>
+<img src='src/pics/GitHub_Demo_2.png'>
 
 <br>
 
