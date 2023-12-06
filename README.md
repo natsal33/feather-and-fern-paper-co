@@ -10,11 +10,11 @@ This website was designed for Fern and Feather Paper Co., a custom calligraphy b
 
 ### Hero Page
 
-<img src='src/pictures/GitHub_Demo_1.png'>
+<img src='src/pics/GitHub_Demo_1.png'>
 
 ### Contact Form Page
 
-<img src='src/pictures/GitHub_Demo_1.png'>
+<img src='src/pics/GitHub_Demo_1.png'>
 
 <br>
 
