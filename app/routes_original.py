@@ -41,6 +41,3 @@ def get_gallery_images():
             )
 
     return gallery_pic_array
-
-
-# upload_file_to_bucket(bucket_name, 'local_file.txt', 'path/in/bucket/uploaded_file.txt')

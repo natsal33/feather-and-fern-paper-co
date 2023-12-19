@@ -1,6 +1,5 @@
 import React from "react";
 import "./gallery.css";
-import { Form, useActionData } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -14,13 +13,14 @@ function Gallery() {
 
   async function retrieveGalleryPhotos() {
     const galleryName = "demo-pics";
-    const searchURL = `localhost:5000/database/download-gallery-cover-photo?gallery-name=${galleryName}`;
+    const searchURL = `http://localhost:5000/database/download-gallery?gallery-name=${galleryName}`;
+    const thumbnailURL =
+      "http://localhost:5000/database/download-gallery-thumbnails";
     const testURL = "http://localhost:5000/database";
     console.log("Search URL: " + searchURL);
 
     try {
-      // const response = await axios.get(searchURL);
-      const test_response = await axios.fetch(testURL);
+      const test_response = await axios.get(thumbnailURL);
       get_response = test_response.data;
       console.log("Response: " + get_response);
       // const retrievedGalleryPhotos = response.data.map((photo) => (
@@ -45,8 +45,9 @@ function Gallery() {
   return (
     <div>
       <h2>Gallery Page coming soon!</h2>
+      {/* <img src={require("./demo-pic1.png")} alt="Gallery thumbnail photo" /> */}
       {/* <p>{get_response}</p> */}
-      {/* <div id="gallery-grid">{galleryPics}</div> */}
+      <div id="gallery-grid">{galleryPics}</div>
     </div>
   );
 }
