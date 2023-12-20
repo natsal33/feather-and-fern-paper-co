@@ -74,7 +74,7 @@ def get_gallery_thumbnails():
             photo_file_destination = (
                 destination_folder_name + "/" + gallery_name + "_" + photo_name
             )
-            gallery_thumbnail_array.append(photo_file_destination)
+            gallery_thumbnail_array.append(gallery_name + "_" + photo_name)
             s3_methods.download_file_from_bucket(
                 ff_bucket_name, photo_file_destination, photo["Key"]
             )

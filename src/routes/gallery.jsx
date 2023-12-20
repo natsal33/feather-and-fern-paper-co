@@ -2,9 +2,11 @@ import React from "react";
 import "./gallery.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import GalleryThumbnail from "../Components/GalleryThumbnail";
 
 function Gallery() {
   const [galleryPics, setGalleryPics] = useState([]);
+  const [galleryComponents, setGalleryComponents] = useState([]);
   let get_response = "";
 
   useEffect(() => {
@@ -12,6 +14,7 @@ function Gallery() {
   }, []);
 
   async function retrieveGalleryPhotos() {
+    let thumbnailPics = [];
     const galleryName = "demo-pics";
     const searchURL = `http://localhost:5000/database/download-gallery?gallery-name=${galleryName}`;
     const thumbnailURL =
@@ -32,7 +35,13 @@ function Gallery() {
       //   const noResults = <h2>There are no gallery photos to display.</h2>;
       //   setGalleryPics(noResults);
       // }
-      setGalleryPics(get_response);
+      thumbnailPics = get_response.map((pic_path) => {
+        return <GalleryThumbnail name="B+N Wedding" thumbnail={pic_path} />;
+      });
+
+      console.log(thumbnailPics);
+
+      setGalleryComponents(thumbnailPics);
     } catch (error) {
       console.log(error);
       const errorMessage = (
@@ -44,10 +53,10 @@ function Gallery() {
 
   return (
     <div>
-      <h2>Gallery Page coming soon!</h2>
+      <h2>Gallery</h2>
       {/* <img src={require("./demo-pic1.png")} alt="Gallery thumbnail photo" /> */}
       {/* <p>{get_response}</p> */}
-      <div id="gallery-grid">{galleryPics}</div>
+      <div id="gallery-grid">{galleryComponents}</div>
     </div>
   );
 }
