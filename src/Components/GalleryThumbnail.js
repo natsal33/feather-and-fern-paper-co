@@ -1,12 +1,15 @@
 import React from "react";
+import "./GalleryThumbnail.css";
 
 function GalleryThumbnail(props) {
+  const thumbnailStyle = {
+    backgroundImage: "url(" + props.image + ")",
+    backgroundSize: "50vh",
+  };
+
   return (
-    <div>
+    <div className="galleryThumbnailComponent" style={thumbnailStyle}>
       <h3>{props.name}</h3>
-      <img
-        src={require("../pics/gallery-page-photos/" + props.thumbnail)}
-      ></img>
     </div>
   );
 }

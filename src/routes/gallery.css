@@ -1,6 +1,7 @@
 @import "../theme.css";
 
 #gallery-grid {
+  display: flex;
 }
 
 /* To revisit when doing responsive design editing */

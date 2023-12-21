@@ -41,6 +41,7 @@ def get_gallery_photos():
 
             if photo_name != "/":
                 photo_S3_url = f"https://feather-and-fern-paper-co.s3.us-west-2.amazonaws.com/gallery/{gallery_name}/{photo_name}"
+                photo_dict = {"name": photo_name, "url": photo_S3_url}
                 gallery_photo_array.append(photo_S3_url)
 
     return gallery_photo_array
@@ -61,18 +62,8 @@ def get_gallery_thumbnails():
             photo_name = photo_path.removeprefix(path_prefix)
             print("gallery_name: " + gallery_name)
             thumbnail_s3_url = f"https://feather-and-fern-paper-co.s3.us-west-2.amazonaws.com/gallery/{gallery_name}/{photo_name}"
+            thumbnail_dict = {"name": gallery_name, "url": thumbnail_s3_url}
 
-            gallery_thumbnail_array.append(thumbnail_s3_url)
+            gallery_thumbnail_array.append(thumbnail_dict)
 
     return gallery_thumbnail_array
-
-
-@app.route("/database/find-object-url")
-def find_object_url():
-    bucket_objects_array = []
-    gallery_name = request.args.get("gallery_name", None)
-    print("gallery_name: " + gallery_name)
-
-    objects_in_bucket = s3_methods.list_objects(ff_bucket_name, "gallery/demo-pics")
-
-    return objects_in_bucket

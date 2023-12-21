@@ -3,43 +3,34 @@ import "./gallery.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import GalleryThumbnail from "../Components/GalleryThumbnail";
+import { NavLink } from "react-router-dom";
 
 function Gallery() {
-  const [galleryPics, setGalleryPics] = useState([]);
   const [galleryComponents, setGalleryComponents] = useState([]);
   let get_response = "";
 
   useEffect(() => {
-    retrieveGalleryPhotos();
+    retrieveGalleryThumbnails();
   }, []);
 
-  async function retrieveGalleryPhotos() {
+  async function retrieveGalleryThumbnails() {
     let thumbnailPics = [];
-    const galleryName = "demo-pics";
-    const searchURL = `http://localhost:5000/database/download-gallery?gallery-name=${galleryName}`;
     const thumbnailURL =
-      "http://localhost:5000/database/download-gallery-thumbnails";
-    const testURL = "http://localhost:5000/database";
-    console.log("Search URL: " + searchURL);
+      "http://localhost:5000/database/fetch-gallery-thumbnails";
 
     try {
       const test_response = await axios.get(thumbnailURL);
       get_response = test_response.data;
-      console.log("Response: " + get_response);
-      // const retrievedGalleryPhotos = response.data.map((photo) => (
-      //   <h4>photo</h4>
-      // ));
-      // if (retrieveGalleryPhotos.length > 0) {
-      //   setGalleryPics(retrievedGalleryPhotos);
-      // } else {
-      //   const noResults = <h2>There are no gallery photos to display.</h2>;
-      //   setGalleryPics(noResults);
-      // }
-      thumbnailPics = get_response.map((pic_path) => {
-        return <GalleryThumbnail name="B+N Wedding" thumbnail={pic_path} />;
+      thumbnailPics = get_response.map((image_dict) => {
+        return (
+          <NavLink to={"/gallery"} key={image_dict["name"]}>
+            <GalleryThumbnail
+              name={image_dict["name"]}
+              image={image_dict["url"]}
+            />
+          </NavLink>
+        );
       });
-
-      console.log(thumbnailPics);
 
       setGalleryComponents(thumbnailPics);
     } catch (error) {
@@ -47,15 +38,13 @@ function Gallery() {
       const errorMessage = (
         <h2>There was an error loading the search results.</h2>
       );
-      setGalleryPics(errorMessage);
+      setGalleryComponents(errorMessage);
     }
   }
 
   return (
     <div>
       <h2>Gallery</h2>
-      {/* <img src={require("./demo-pic1.png")} alt="Gallery thumbnail photo" /> */}
-      {/* <p>{get_response}</p> */}
       <div id="gallery-grid">{galleryComponents}</div>
     </div>
   );
