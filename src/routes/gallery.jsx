@@ -3,7 +3,9 @@ import "./gallery.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import GalleryThumbnail from "../Components/GalleryThumbnail";
+import ImageDetail from "./ImageDetail";
 import { NavLink } from "react-router-dom";
+import { Link, Routes, Route } from "react-router-dom";
 
 function Gallery() {
   const [galleryComponents, setGalleryComponents] = useState([]);
@@ -22,13 +24,17 @@ function Gallery() {
       const test_response = await axios.get(thumbnailURL);
       get_response = test_response.data;
       thumbnailPics = get_response.map((image_dict) => {
+        const thumbnail_album_name = image_dict["name"];
         return (
-          <NavLink to={"/gallery"} key={image_dict["name"]}>
+          <Link
+            to={`gallery/${thumbnail_album_name}`}
+            key={thumbnail_album_name}
+          >
             <GalleryThumbnail
-              name={image_dict["name"]}
+              name={thumbnail_album_name}
               image={image_dict["url"]}
             />
-          </NavLink>
+          </Link>
         );
       });
 
@@ -46,6 +52,11 @@ function Gallery() {
     <div>
       <h2>Gallery</h2>
       <div id="gallery-grid">{galleryComponents}</div>
+      <div id="gallery-grid">{galleryComponents}</div>
+
+      <Routes>
+        <Route path=":imageId" element={<ImageDetail />} />
+      </Routes>
     </div>
   );
 }
