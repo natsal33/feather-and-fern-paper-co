@@ -26,10 +26,7 @@ function Gallery() {
       thumbnailPics = get_response.map((image_dict) => {
         const thumbnail_album_name = image_dict["name"];
         return (
-          <Link
-            to={`gallery/${thumbnail_album_name}`}
-            key={thumbnail_album_name}
-          >
+          <Link to={`${thumbnail_album_name}`} key={thumbnail_album_name}>
             <GalleryThumbnail
               name={thumbnail_album_name}
               image={image_dict["url"]}
