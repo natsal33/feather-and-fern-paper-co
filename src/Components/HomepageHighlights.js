@@ -5,12 +5,7 @@ import HighlightLeft from "./HighlightLeft";
 import HighlightRight from "./HighlightRight";
 
 function HomepageHighlights() {
-  const highlightContent = [
-    <HighlightLeft />,
-    <HighlightRight />,
-    <HighlightLeft />,
-    <HighlightRight />,
-  ];
+  const highlightContent = [<HighlightLeft />, <HighlightRight />];
   const displayItems = highlightContent.map((highlight) => (
     <FadeInSection key={Date.now() + Math.random()}>{highlight}</FadeInSection>
   ));

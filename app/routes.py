@@ -32,17 +32,18 @@ def connected_to_database():
 @app.route("/database/fetch-gallery")
 def get_gallery_photos():
     if request.args:
-        gallery_name = request.args.get("gallery-name", None)
+        gallery_name = request.args.get("album-name", None)
+        print("gallery name: " + gallery_name)
         gallery_photo_array = []
         photos = s3_methods.list_objects(ff_bucket_name, "gallery/" + gallery_name)
 
         for photo in photos:
-            photo_name = photo["Key"].removeprefix(gallery_name)
-
-            if photo_name != "/":
+            photo_name = photo["Key"].removeprefix("gallery/" + gallery_name + "/")
+            print("photo name: " + photo_name)
+            if photo_name != "":
                 photo_S3_url = f"https://feather-and-fern-paper-co.s3.us-west-2.amazonaws.com/gallery/{gallery_name}/{photo_name}"
                 photo_dict = {"name": photo_name, "url": photo_S3_url}
-                gallery_photo_array.append(photo_S3_url)
+                gallery_photo_array.append(photo_dict)
 
     return gallery_photo_array
 
@@ -60,7 +61,6 @@ def get_gallery_thumbnails():
             gallery_name = re.search("gallery/(.+?)/thumbnail", photo_path).group(1)
             path_prefix = "gallery/" + gallery_name + "/"
             photo_name = photo_path.removeprefix(path_prefix)
-            print("gallery_name: " + gallery_name)
             thumbnail_s3_url = f"https://feather-and-fern-paper-co.s3.us-west-2.amazonaws.com/gallery/{gallery_name}/{photo_name}"
             thumbnail_dict = {"name": gallery_name, "url": thumbnail_s3_url}
 

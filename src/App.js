@@ -1,12 +1,9 @@
 import {
   createBrowserRouter,
   RouterProvider,
-  Routes,
   Route,
-  Link,
-  BrowserRouter,
+  createRoutesFromElements,
 } from "react-router-dom";
-import ErrorPage from "./error-page";
 import Error_404 from "./404-page";
 import Root from "./routes/root";
 import Home from "./routes/home";
@@ -15,72 +12,30 @@ import PrivacyPolicy from "./routes/privacy-policy";
 import TermsAndConditions from "./routes/terms-conditions";
 import Contact from "./routes/contact";
 import FAQ from "./routes/faq";
-import Gallery from "./routes/gallery";
+import Gallery, { loader as galleryLoader } from "./routes/gallery";
+import PhotoAlbum, { loader as photoAlbumLoader } from "./routes/PhotoAlbum";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    errorElement: <Error_404 />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: "gallery/*",
-        element: <Gallery />,
-        children: [
-          {
-            path: "view-album/:albumName",
-            element: <About />,
-          },
-        ],
-      },
-      {
-        path: "about",
-        element: <About />,
-      },
-      {
-        path: "privacy-policy",
-        element: <PrivacyPolicy />,
-      },
-      {
-        path: "terms-and-conditions",
-        element: <TermsAndConditions />,
-      },
-      {
-        path: "contact",
-        element: <Contact />,
-      },
-      {
-        path: "faq",
-        element: <FAQ />,
-      },
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Root />}>
+      <Route index="true" element={<Home />} />
+      <Route path="/gallery" element={<Gallery />} loader={galleryLoader} />
+      <Route
+        path="/gallery/:albumName"
+        element={<PhotoAlbum />}
+        loader={photoAlbumLoader}
+      />
+      <Route path="/about" element={<About />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/faq" element={<FAQ />} />
+    </Route>
+  )
+);
 
 const App = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Root />}>
-          <Route index="true" element={<Home />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/gallery/:albumName" element={<About />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route
-            path="/terms-and-conditions"
-            element={<TermsAndConditions />}
-          />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/faq" element={<FAQ />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;

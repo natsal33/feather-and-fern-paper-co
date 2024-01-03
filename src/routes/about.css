@@ -21,25 +21,23 @@
   }
 }
 
-@media only screen and (max-width: 649px) {
-  #about-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-  }
+#about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
 
-  #about-commentary {
-    padding: 5px;
-    margin: 10px;
-    text-align: center;
-  }
+#about-commentary {
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+}
 
-  #artist-portrait {
-    width: 200px;
-    height: 200px;
-    background-image: url("../pics/wire_frame_box.png");
-    background-size: 200px;
-    background-repeat: no-repeat;
-  }
+#artist-portrait {
+  width: 200px;
+  height: 200px;
+  background-image: url("../pics/wire_frame_box.png");
+  background-size: 200px;
+  background-repeat: no-repeat;
 }

@@ -51,48 +51,46 @@
   }
 }
 
-@media only screen and (max-width: 649px) {
-  #frontPageHighlightArea {
-    align-items: center;
-    position: relative;
-  }
+#frontPageHighlightArea {
+  align-items: center;
+  position: relative;
+}
 
-  .highlightItem {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.highlightItem {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .highlightNote {
-    background-color: rgb(255, 255, 255, 0.4);
-    opacity: 1;
-    padding: 15px 20px;
-    line-height: 22px;
-    text-align: center;
-  }
+.highlightNote {
+  background-color: rgb(255, 255, 255, 0.4);
+  opacity: 1;
+  padding: 15px 20px;
+  line-height: 22px;
+  text-align: center;
+}
 
-  .highlightNote.right {
-  }
-  .highlightNote.left {
-  }
+.highlightNote.right {
+}
+.highlightNote.left {
+}
 
-  .highlightPic {
-    min-height: 13rem;
-    min-width: 13rem;
-    background-repeat: no-repeat;
-    background-size: 13rem;
-    margin: 10px 25px;
-    box-shadow: 0 0 8px 8px white inset;
-    border-radius: 12%;
-  }
+.highlightPic {
+  min-height: 13rem;
+  min-width: 13rem;
+  background-repeat: no-repeat;
+  background-size: 13rem;
+  margin: 10px 25px;
+  box-shadow: 0 0 8px 8px white inset;
+  border-radius: 12%;
+}
 
-  #highlightLeftPic {
-    background-image: url("../pics/highlight-images/highlight-script1.jpeg");
-  }
+#highlightLeftPic {
+  background-image: url("../pics/highlight-images/highlight-script1.jpeg");
+}
 
-  #highlightRightPic {
-    background-image: url("../pics/highlight-images/highlight-script2.jpeg");
-  }
+#highlightRightPic {
+  background-image: url("../pics/highlight-images/highlight-script2.jpeg");
 }

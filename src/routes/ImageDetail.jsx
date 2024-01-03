@@ -6,9 +6,6 @@ const ImageDetail = () => {
 
   console.log("made it into route component");
 
-  // Fetch image details based on imageId
-  // You can use this information to render the details of the selected image
-
   return (
     <div>
       <h2>Image Detail</h2>

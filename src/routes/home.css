@@ -64,31 +64,29 @@
   }
 }
 
-@media only screen and (max-width: 649px) {
-  #homeContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
-    margin: 20px;
-  }
+#homeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  margin: 20px;
+}
 
-  #scrollingGallery {
-    background-repeat: no-repeat;
-    background-position-x: center;
-  }
+#scrollingGallery {
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
 
-  #welcome-statement {
-    letter-spacing: 1.5px;
-  }
+#welcome-statement {
+  letter-spacing: 1.5px;
+}
 
-  #intro {
-    text-align: center;
-    width: 60%;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    line-height: 25px;
-  }
+#intro {
+  text-align: center;
+  width: 60%;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  line-height: 25px;
 }

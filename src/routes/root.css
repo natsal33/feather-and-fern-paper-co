@@ -13,14 +13,12 @@
   }
 }
 
-@media only screen and (max-width: 649px) {
-  #root {
-    min-width: 100vw;
-    min-height: 100vh;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-  }
+#root {
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
 }

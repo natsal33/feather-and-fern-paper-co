@@ -1,5 +1,6 @@
 import React from "react";
 import "./GalleryThumbnail.css";
+import { Link } from "react-router-dom";
 
 function GalleryThumbnail(props) {
   const thumbnailStyle = {
@@ -8,9 +9,11 @@ function GalleryThumbnail(props) {
   };
 
   return (
-    <div className="galleryThumbnailComponent" style={thumbnailStyle}>
-      <h3>{props.name}</h3>
-    </div>
+    <Link to={`/gallery/${props.name}`} key={props.name}>
+      <div className="galleryThumbnailComponent" style={thumbnailStyle}>
+        <h3>{props.name}</h3>
+      </div>
+    </Link>
   );
 }
 
