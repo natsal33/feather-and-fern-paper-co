@@ -1,6 +1,7 @@
 import React from "react";
+import "./PhotoAlbum.css";
 import GalleryPhoto from "../Components/GalleryPhoto";
-import { useParams, useLoaderData } from "react-router-dom";
+import { Link, useParams, useLoaderData } from "react-router-dom";
 import axios from "axios";
 
 export function loader({ request }) {
@@ -29,7 +30,14 @@ function PhotoAlbum() {
   console.log("Album Name: " + albumName);
   const albumPhotos = useLoaderData();
 
-  return <div className="gallery-grid">{albumPhotos}</div>;
+  return (
+    <div>
+      <h3>
+        &#8592;<Link to={"/gallery"}>Back to Galleries</Link>
+      </h3>
+      <div className="photo-grid">{albumPhotos}</div>;
+    </div>
+  );
 }
 
 export default PhotoAlbum;

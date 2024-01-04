@@ -1,15 +1,20 @@
-#gallery-grid {
-  display: flex;
-}
+@import "../theme.css";
 
 .galleryThumbnailComponent {
   margin: 20px;
-  width: 200px;
-  height: 400px;
+  width: 300px;
+  height: 450px;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: end;
 }
 
-.thumbnailImage {
-  min-width: 100%;
-  height: 100%;
-  object-fit: cover;
+.galleryThumbnailText {
+  background-color: rgba(255, 255, 255, 0.558);
+  color: var(--font-lowlight);
+  width: 80%;
+  text-align: center;
 }

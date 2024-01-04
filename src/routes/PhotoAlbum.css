@@ -1,1 +1,9 @@
 @import "../theme.css";
+
+.photo-grid {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}

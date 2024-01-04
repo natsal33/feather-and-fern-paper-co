@@ -9,10 +9,11 @@ export function loader() {
     "http://localhost:5000/database/fetch-gallery-thumbnails";
   const get_response = axios.get(thumbnailURL).then(function (response) {
     const thumbnailObjects = response.data.map((image_dict) => {
-      const thumbnail_album_name = image_dict["name"];
+      const thumbnail_album_name = image_dict["name"].replace(/-/g, " ");
       return (
         <GalleryThumbnail
-          name={thumbnail_album_name}
+          name={image_dict["name"]}
+          albumName={thumbnail_album_name}
           image={image_dict["url"]}
         />
       );
