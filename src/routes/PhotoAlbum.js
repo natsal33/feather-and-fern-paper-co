@@ -7,7 +7,7 @@ import axios from "axios";
 
 export function loader({ request }) {
   const albumName = request.url.split("/")[4];
-  const photoURL = `http://localhost:5000/database/fetch-gallery?album-name=${albumName}`;
+  const photoURL = `/database/fetch-gallery?album-name=${albumName}`;
   const get_response = axios.get(photoURL).then(function (response) {
     const photoObjects = response.data.map((image_dict) => {
       return (
