@@ -5,8 +5,7 @@ import GalleryThumbnail from "../Components/GalleryThumbnail";
 import { useLoaderData } from "react-router-dom";
 
 export function loader() {
-  const thumbnailURL =
-    "http://localhost:5000/database/fetch-gallery-thumbnails";
+  const thumbnailURL = "/database/fetch-gallery-thumbnails";
   const get_response = axios.get(thumbnailURL).then(function (response) {
     const thumbnailObjects = response.data.map((image_dict) => {
       const thumbnail_album_name = image_dict["name"].replace(/-/g, " ");

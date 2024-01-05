@@ -1,0 +1,10 @@
+.enlargedImageComponent {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+}
+
+.enlargedImage {
+  position: sticky;
+  top: 0px;
+}

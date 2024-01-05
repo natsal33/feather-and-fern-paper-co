@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./PhotoAlbum.css";
 import GalleryPhoto from "../Components/GalleryPhoto";
-import { Link, useParams, useLoaderData } from "react-router-dom";
+import EnlargedImage from "./EnlargedImage";
+import { Link, useLoaderData } from "react-router-dom";
 import axios from "axios";
 
 export function loader({ request }) {
   const albumName = request.url.split("/")[4];
   const photoURL = `http://localhost:5000/database/fetch-gallery?album-name=${albumName}`;
   const get_response = axios.get(photoURL).then(function (response) {
-    console.log(response.data);
     const photoObjects = response.data.map((image_dict) => {
       return (
         <GalleryPhoto
@@ -20,14 +20,12 @@ export function loader({ request }) {
     });
     return photoObjects;
   });
-  console.log(get_response);
 
   return get_response;
 }
 
 function PhotoAlbum() {
-  let { albumName } = useParams();
-  console.log("Album Name: " + albumName);
+  const [enlargedImageURL, setEnlargedImageURL] = useState("");
   const albumPhotos = useLoaderData();
 
   return (
@@ -35,7 +33,8 @@ function PhotoAlbum() {
       <h3>
         &#8592;<Link to={"/gallery"}>Back to Galleries</Link>
       </h3>
-      <div className="photo-grid">{albumPhotos}</div>;
+      {enlargedImageURL === "" ? <div /> : <EnlargedImage />}
+      <div className="photo-grid">{albumPhotos}</div>
     </div>
   );
 }

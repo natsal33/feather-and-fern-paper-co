@@ -59,7 +59,7 @@
 
 #Footer {
   font-weight: bold;
-  width: 100vw;
+  width: 100%;
   z-index: 4;
   justify-content: space-between;
   align-items: center;

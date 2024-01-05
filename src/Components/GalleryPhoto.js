@@ -3,7 +3,13 @@ import "./GalleryPhoto.css";
 
 function GalleryPhoto(props) {
   return (
-    <img className="galleryPhoto" src={props.image} alt={`props.name`}></img>
+    <img
+      className="galleryPhoto"
+      src={props.image}
+      alt={`props.name`}
+      onClick={() => window.open(props.image)}
+      role="button"
+    ></img>
   );
 }
 
