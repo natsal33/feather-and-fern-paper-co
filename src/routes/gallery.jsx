@@ -7,6 +7,9 @@ import { useLoaderData } from "react-router-dom";
 export function loader() {
   const thumbnailURL = "/database/fetch-gallery-thumbnails";
   const get_response = axios.get(thumbnailURL).then(function (response) {
+    if (get_response.status === 404) {
+      throw new Response("Not Found", { status: 404 });
+    }
     const thumbnailObjects = response.data.map((image_dict) => {
       const thumbnail_album_name = image_dict["name"].replace(/-/g, " ");
       return (

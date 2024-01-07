@@ -2,6 +2,7 @@ import {
   createBrowserRouter,
   RouterProvider,
   Route,
+  Routes,
   createRoutesFromElements,
 } from "react-router-dom";
 import Error_404 from "./404-page";
@@ -17,19 +18,29 @@ import PhotoAlbum, { loader as photoAlbumLoader } from "./routes/PhotoAlbum";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Root />}>
+    <Route exact path="/" element={<Root />}>
       <Route index="true" element={<Home />} />
-      <Route path="/gallery" element={<Gallery />} loader={galleryLoader} />
       <Route
+        exact
+        path="/gallery"
+        element={<Gallery />}
+        loader={galleryLoader}
+      />
+      <Route
+        exact
         path="/gallery/:albumName"
         element={<PhotoAlbum />}
         loader={photoAlbumLoader}
       />
-      <Route path="/about" element={<About />} />
-      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-      <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/faq" element={<FAQ />} />
+      <Route exact path="/about" element={<About />} />
+      <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route
+        exact
+        path="/terms-and-conditions"
+        element={<TermsAndConditions />}
+      />
+      <Route exact path="/contact" element={<Contact />} />
+      <Route exact path="/faq" element={<FAQ />} />
     </Route>
   )
 );

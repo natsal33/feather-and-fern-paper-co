@@ -49,6 +49,12 @@ def index(path):
 
 
 # add try catch statement if arguments are not passed
+@app.route("/database/connected")
+def connected():
+    return "YOU ARE CONNECTED"
+
+
+# add try catch statement if arguments are not passed
 @app.route("/database/fetch-gallery")
 def get_gallery_photos():
     if request.args:
