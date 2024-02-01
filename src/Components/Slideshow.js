@@ -1,11 +1,13 @@
 import React from "react";
 import "../theme.css";
 import "./Slideshow.css";
-import slidePic1 from "../pics/scrolling-gallery-images/SCROLLING-PHOTO1.jpeg";
-import slidePic2 from "../pics/scrolling-gallery-images/SCROLLING-PHOTO2.jpeg";
-import slidePic3 from "../pics/scrolling-gallery-images/SCROLLING-PHOTO3.jpeg";
+import slidePic4 from "../pics/scrolling-gallery-images/SCROLLING-PHOTO1.jpeg";
+import slidePic5 from "../pics/scrolling-gallery-images/SCROLLING-PHOTO2.jpeg";
+import slidePic2 from "../pics/scrolling-gallery-images/BOBC6607.jpg";
+import slidePic1 from "../pics/scrolling-gallery-images/BOBC7302.jpg";
+import slidePic3 from "../pics/scrolling-gallery-images/BOBC7307.jpg";
 
-const slideShowImages = [slidePic1, slidePic2, slidePic3];
+const slideShowImages = [slidePic1, slidePic2, slidePic3, slidePic4, slidePic5];
 const delay = 10000;
 
 function Slideshow() {
@@ -43,7 +45,10 @@ function Slideshow() {
           <div
             className="slide"
             key={index}
-            style={{ backgroundImage: `url(${backgroundIndex})` }}
+            style={{
+              backgroundImage: `url(${backgroundIndex})`,
+              backgroundSize: "cover",
+            }}
           ></div>
         ))}
       </div>

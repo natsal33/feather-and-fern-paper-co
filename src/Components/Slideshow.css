@@ -4,7 +4,6 @@
 .slideshow {
   margin: 15px auto;
   overflow: hidden;
-  height: 14rem;
   width: 19rem;
 
   transition: ease 1000ms;
@@ -21,7 +20,6 @@
   width: 19rem;
   background-position-x: center;
   background-position-y: center;
-  background-size: 100% auto;
   background-repeat: no-repeat;
   border-radius: 10%;
   background-color: var(--theme-highlight);
@@ -51,7 +49,6 @@
   .slideshow {
     margin: 15px auto;
     overflow: hidden;
-    height: 29rem;
     width: 36rem;
     transition: ease 1000ms;
   }
