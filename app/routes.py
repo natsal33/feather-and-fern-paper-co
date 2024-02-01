@@ -3,17 +3,26 @@ import boto3
 from flask import Flask, request
 from flask_cors import CORS
 import boto3
+import os
 
 
 app = Flask(__name__, static_folder="../build", static_url_path="/")
 CORS(app)
 
 
+aws_access_key_id = os.environ.get("AWS_ACCESS_KEY_ID")
+aws_secret_access_key = os.environ.get("AWS_SECRET_ACCESS_KEY")
+aws_region = os.environ.get("AWS_REGION")
+
+s3 = boto3.client(
+    "s3",
+    aws_access_key_id=aws_access_key_id,
+    aws_secret_access_key=aws_secret_access_key,
+    region_name=aws_region,
+)
+
 # S3 bucket name
 ff_bucket_name = "feather-and-fern-paper-co"
-
-
-s3 = boto3.client("s3")
 
 
 # List objects in bucket with specified prefix
