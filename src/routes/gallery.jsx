@@ -11,7 +11,7 @@ export function loader() {
       throw new Response("Not Found", { status: 404 });
     }
     const thumbnailObjects = response.data.map((image_dict) => {
-      const thumbnail_album_name = image_dict["name"].replace(/-/g, " ");
+      const thumbnail_album_name = image_dict["name"];
       return (
         <GalleryThumbnail
           name={image_dict["name"]}

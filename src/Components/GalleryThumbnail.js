@@ -10,7 +10,9 @@ function GalleryThumbnail(props) {
   return (
     <Link to={`/gallery/${props.name}`} key={props.name}>
       <div className="galleryThumbnailComponent" style={thumbnailStyle}>
-        <h3 className="galleryThumbnailText">{props.albumName}</h3>
+        <h3 className="galleryThumbnailText">
+          {decodeURIComponent(props.albumName).replace(/-/g, " ")}
+        </h3>
       </div>
     </Link>
   );
