@@ -4,6 +4,7 @@ from flask import Flask, request
 from flask_cors import CORS
 import boto3
 import os
+import urllib.parse
 
 
 app = Flask(__name__, static_folder="../build", static_url_path="/")
@@ -68,6 +69,7 @@ def connected():
 def get_gallery_photos():
     if request.args:
         gallery_name = request.args.get("album-name", None)
+        print("gallery_name: ", gallery_name)
         gallery_photo_array = []
         photos = list_objects(ff_bucket_name, "gallery/" + gallery_name)
 
@@ -88,14 +90,22 @@ def get_gallery_thumbnails():
     photos = list_objects(ff_bucket_name, "")
 
     for photo in photos:
-        photo_path = photo["Key"]
+        photo_path = urllib.parse.quote(photo["Key"])
 
         if "thumbnail" in photo_path:
+            print("photo_path: ", photo_path)
             gallery_name = re.search("gallery/(.+?)/thumbnail", photo_path).group(1)
+            print("gallery_name: ", gallery_name)
             path_prefix = "gallery/" + gallery_name + "/"
+            print("path_prefix: ", path_prefix)
             photo_name = photo_path.removeprefix(path_prefix)
+            print("photo_name: ", photo_name)
             thumbnail_s3_url = f"https://feather-and-fern-paper-co.s3.us-west-2.amazonaws.com/gallery/{gallery_name}/{photo_name}"
-            thumbnail_dict = {"name": gallery_name, "url": thumbnail_s3_url}
+            print("thumbnail_s3_url: ", thumbnail_s3_url)
+            thumbnail_dict = {
+                "name": gallery_name,
+                "url": thumbnail_s3_url,
+            }
 
             gallery_thumbnail_array.append(thumbnail_dict)
 
