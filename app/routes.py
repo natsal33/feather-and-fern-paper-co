@@ -58,18 +58,15 @@ def index(path):
     return app.send_static_file("index.html")
 
 
-# add try catch statement if arguments are not passed
 @app.route("/database/connected")
 def connected():
     return "YOU ARE CONNECTED"
 
 
-# add try catch statement if arguments are not passed
 @app.route("/database/fetch-gallery")
 def get_gallery_photos():
     if request.args:
         gallery_name = request.args.get("album-name", None)
-        print("gallery_name: ", gallery_name)
         gallery_photo_array = []
         photos = list_objects(ff_bucket_name, "gallery/" + gallery_name)
 
