@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin: 20px;
 }
 
 /* To revisit when doing responsive design editing */
