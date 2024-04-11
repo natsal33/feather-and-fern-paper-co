@@ -15,6 +15,7 @@ import Contact from "./routes/contact";
 import FAQ from "./routes/faq";
 import Gallery, { loader as galleryLoader } from "./routes/gallery";
 import PhotoAlbum, { loader as photoAlbumLoader } from "./routes/PhotoAlbum";
+import AdminLogin from "./routes/AdminLogin";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -41,6 +42,7 @@ const router = createBrowserRouter(
       />
       <Route exact path="/contact" element={<Contact />} />
       <Route exact path="/faq" element={<FAQ />} />
+      <Route exact path="/admin-login" element={<AdminLogin/>}/>
     </Route>
   )
 );
