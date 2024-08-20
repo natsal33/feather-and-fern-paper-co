@@ -7,7 +7,6 @@ function About() {
     <div>
       <FadeInSection>
         <div id="about-section">
-          <div id="artist-portrait" />
           <div id="about-commentary">
             <h2>About Me</h2>
             <p>

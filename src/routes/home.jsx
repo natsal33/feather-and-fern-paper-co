@@ -12,10 +12,8 @@ function Home() {
         <Slideshow />
         <h2 id="welcome-statement">Welcome to Feather & Fern Paper Co.</h2>
         <p id="intro">
-          Here is where you can put some content to draw the eyes of potential
-          clients and talk al little bit about yourself. A little bit about your
-          style, a bit about your work, and talk high level about your
-          offerings. Something to draw readers in.
+          
+At Feather & Fern Paper Co., modernity meets minimalism in every creation. Specializing in sleek, contemporary designs, they capture the essence of life's most significant moments with clean lines and refined elegance. From custom wedding invitations to personalized stationery, each piece is crafted with precision and a keen eye for detail. Explore their offerings and discover how they can bring your vision to life with modern, timeless artistry.
         </p>
         <HomepageHighlights />
       </div>
