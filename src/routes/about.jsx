@@ -30,6 +30,10 @@ function About() {
               the couple they are celebrating. I am grateful for the opportunity
               to share my passion with you.
             </p>
+
+            <p>
+              - Hannah Chee
+            </p>
           </div>
         </div>
       </FadeInSection>
