@@ -1,6 +1,6 @@
 import re
 import boto3
-from flask import Flask, request
+from flask import Flask, request, send_from_directory
 from flask_cors import CORS
 import boto3
 import os
@@ -25,6 +25,12 @@ s3 = boto3.client(
 # S3 bucket name
 ff_bucket_name = "feather-and-fern-paper-co"
 
+
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static', 'images'),
+                               'favicon.ico', mimetype='image/png')
 
 # List objects in bucket with specified prefix
 def list_objects(bucket_name, prefix):
